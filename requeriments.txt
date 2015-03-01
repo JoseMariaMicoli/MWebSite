@@ -1,0 +1,5 @@
+Django==1.7.5
+django-admin-bootstrapped==2.3.3
+django-localflavor==1.1
+django-markdown==0.8.4
+Markdown==2.6

@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+
+{% block title %}
+<title>Micoli's Blog - Sobre...</title>
+{% endblock %}
+
+{% block menu %}
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="{% url "index" %}">Principal</a>
+          <a class="blog-nav-item" href="{% url "contato" %}">Contato</a>
+          <a class="blog-nav-item active" href="{% url "about" %}">Sobre...</a>
+        </nav>
+      </div>
+    </div>>
+{% endblock %}
+
+{% block blogheader %}
+  <div class="blog-header">
+        <h1 class="blog-title">Sobre</h1>
+        <p class="lead blog-description">Legenda sobre o meu blog em python com django</p>
+  </div>
+{% endblock %}
+
+{% block blog_entries %}
+Sobre meu blog
+{% endblock %}

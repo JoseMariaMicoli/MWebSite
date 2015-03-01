@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block title %}
+<title>Micoli's Blog - Contato</title>
+{% endblock %}
+
+{% block menu %}
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="{% url "index" %}">Principal</a>
+          <a class="blog-nav-item active" href="{% url "contato" %}">Contato</a>
+          <a class="blog-nav-item" href="{% url "about" %}">Sobre...</a>
+        </nav>
+      </div>
+    </div>>
+{% endblock %}
+
+{% block blogheader %}
+  <div class="blog-header">
+        <h1 class="blog-title">Contato</h1>
+        <p class="lead blog-description">Legenda sobre o meu blog em python com django</p>
+  </div>
+{% endblock %}
+
+{% block blog_entries %}
+ <form action="" method="post">{% csrf_token %}
+       <table> {{ form.as_table }}</table>
+        <input type="submit" />
+ </form>
+{% endblock %}
+
